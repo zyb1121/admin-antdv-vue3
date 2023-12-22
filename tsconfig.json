@@ -1,0 +1,41 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "useDefineForClassFields": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noImplicitAny": false, // 无隐含的any
+    "noImplicitThis": true,
+    "resolveJsonModule": true, // 允许导入json
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "types/*": ["./src/types/*"],
+      "@/*": ["./src/*"],
+      "components/*": ["src/components/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 3
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "include": ["src/**/*", "src/**/*.vue", "src/types"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,131 @@
+// 手动加载样式，否则打包样式不生效
+@import 'ant-design-vue/es/message/style/index.css';
+@import 'ant-design-vue/es/modal/style/index.css';
+/* slide */
+.slide-leave-active,
+.slide-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-enter-from {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+// 布局
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fn {
+  float: none;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.clear-float:before,
+.clear-float:after {
+  clear: both;
+  display: table;
+  width: 0;
+  height: 0;
+  content: ' ';
+}
+.block-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+.vertical-mid {
+  vertical-align: middle;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+.vertical-baseline {
+  vertical-align: baseline;
+}
+// 宽度
+.width-full {
+  width: 100%;
+}
+.w100 {
+  width: 100px;
+}
+.w150 {
+  width: 150px;
+}
+.w200 {
+  width: 200px;
+}
+// 文字对齐
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-break {
+  white-space: initial;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+// 字体大小
+.text-mini {
+  font-size: 12px;
+}
+.text-normal {
+  font-size: 14px;
+}
+.text-medium {
+  font-size: 16px;
+}
+.text-large {
+  font-size: 18px;
+}
+// 字体颜色
+.text-primary {
+  color: @primary-color;
+}
+.text-normal-color {
+  color: @text-color;
+}
+.text-secondary {
+  color: @text-color-secondary;
+}
+.text-success {
+  color: @success-color;
+}
+.text-disabled {
+  color: @disabled-color;
+}
+.text-error {
+  color: @error-color;
+}
+.text-warning {
+  color: @warning-color;
+}
+// 鼠标
+.cursor-p {
+  cursor: pointer;
+}
+.cursor-d {
+  cursor: default;
+}
