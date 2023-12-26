@@ -1,10 +1,3 @@
-/*
- * @Author: Bwrong
- * @Github: https://github.com/BWrong
- * @Date: 2020-07-03 15:57:14
- * @LastEditors: Bwrong
- * @LastEditTime: 2020-11-30 17:01:46
- */
 const Storage = localStorage; // 设置要使用的存储器
 // 🐶TODO：考虑使用单例模式，分离副作用
 class AuthTool {
@@ -69,7 +62,7 @@ class AuthTool {
     permissions.forEach((item) => {
       authMap[item[this.authKey]] = item;
       // if (!authorityType.includes(item.type)) {
-        menus.push(item);
+      menus.push(item);
       // }
     });
     return {
